@@ -5,6 +5,9 @@ import Meme from "./components/Meme"
 
 export default function App(){
     return(
-        <Header/>
+        <div>
+            <Header/>
+            <Meme/>
+        </div>
     )
 }
