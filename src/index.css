@@ -26,22 +26,20 @@ body{
 
 .header-logo{
     position:absolute;
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 18rem;
     background-color: white;
     object-fit: contain;
     border-radius: 20px;
     padding: 0px 20px;
     box-shadow: 0px 0px 10px 0px gray;
-    
-
 }
 
 
 .meme--box{
     width:100%;
     align-items: center;
-    margin-top:4rem;
+    margin-top:3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,19 +59,61 @@ input[type=text]{
    width:49%;
    border-radius: 10px;
    border: solid 3px cyan;
-   /* box-shadow: 1px 1px 2px 3px rgb(69, 192, 192); */
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #submit{
     width:100%;
     margin-top: 10px;
     border-style: none;
     padding: 10px 15px;
-    background-color: rgb(69, 192, 192);
+    background-image: linear-gradient(to right, #0373fd, #009cff, #00bfff, #00deff, #49f9ff);
     color:white;
     border-radius: 10px;
     cursor: pointer;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
 }
 .meme--image img{
     border-radius: 5px;
+    width:350px;
+}
+.meme--image{
+    position:relative;
+    max-width: 100%;
+}
+.meme--text{
+    width: 80%;
+    text-align: center;
+    padding: 0px 10px;
+    color:white;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+.top{
+    position: absolute;
+    top:5%;
+    left:50%;
+    transform: translatex(-50%);
+}
+
+.bottom{
+    position: absolute;
+    bottom:5%;
+    left:50%;
+    transform: translatex(-50%);
+    
 }
 
