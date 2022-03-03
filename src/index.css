@@ -75,7 +75,7 @@ input[type=text]{
 }
 .meme--image img{
     border-radius: 5px;
-    width:350px;
+    width:25rem;
 }
 .meme--image{
     position:relative;
