@@ -10,7 +10,7 @@ body{
     background-size: cover;
     background-color: cyan;
     background-position-y:bottom;
-    background-blend-mode:lighten;
+    background-blend-mode:lighten
     
 }
 
@@ -26,44 +26,54 @@ body{
 
 .header-logo{
     position:absolute;
-    margin-top: 10px;
+    margin-top: 2rem;
     width: 18rem;
     background-color: white;
     object-fit: contain;
     border-radius: 20px;
     padding: 0px 20px;
     box-shadow: 0px 0px 10px 0px gray;
-    animation: move 15s infinite linear;
+    
 
 }
-@keyframes move{
-    0%{left:0%}
-    50%{
-        left: 100%;
-        transform: translatex(-100%);
-    }
-    100%{left:0%}
-}
+
 
 .meme--box{
-    margin-top:3rem;
+    width:100%;
+    align-items: center;
+    margin-top:4rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    gap:2rem;
 }
+.input--area{
+  width: 50rem;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap:5px;
 
+}
 input[type=text]{
    border-style:none;
-   padding: 5px 10px;
-   width:50%;
+   padding: 10px 15px;
+   width:49%;
    border-radius: 10px;
-   box-shadow: 1px 1px 2px 5px cyan;
+   border: solid 3px cyan;
+   /* box-shadow: 1px 1px 2px 3px rgb(69, 192, 192); */
 }
 #submit{
     width:100%;
     margin-top: 10px;
     border-style: none;
-    padding: 7px 15px;
-    background-color: cyan;
+    padding: 10px 15px;
+    background-color: rgb(69, 192, 192);
     color:white;
     border-radius: 10px;
+    cursor: pointer;
 }
+.meme--image img{
+    border-radius: 5px;
+}
+
