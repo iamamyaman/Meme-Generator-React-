@@ -9,9 +9,10 @@ body{
     margin: 0;
     background-image: url("https://cdn.suwalls.com/wallpapers/meme/meme-compilation-21800-1920x1080.jpg");
     background-size: cover;
-    background-color: cyan;
+    background-color: rgb(150, 150, 150);
     background-position-y:bottom;
-    background-blend-mode:lighten
+    background-blend-mode:lighten;
+    margin-right: 0 auto;
     
 }
 
@@ -32,28 +33,30 @@ body{
     background-color: white;
     object-fit: contain;
     border-radius: 20px;
-    padding: 0px 20px;
     box-shadow: 0px 0px 10px 0px gray;
 }
 
 
 .meme--box{
     width:100%;
+    padding: 0 2rem;
     align-items: center;
     margin-top:3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap:2rem;
 }
 .input--area{
-  width: 50rem;
+  width: 90%;
   display:flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap:5px;
-
 }
+
+
 input[type=text]{
    border-style:none;
    padding: 10px 15px;
@@ -77,6 +80,8 @@ input[type=text]{
 .meme--image img{
     border-radius: 5px;
     width:25rem;
+    box-shadow: 0px 0px 10px 3
+    px cyan;
 }
 .meme--image{
     position:relative;
