@@ -57,7 +57,7 @@ export default function Meme(){
                       type ="text"
                       placeholder="Bottom Text" 
                       name ="bottomText"
-                      id ="bottom--text"
+                      className ="bottom--text"
                       value={meme.bottomText}
                       onChange={handleChange}
                       />
