@@ -7,13 +7,13 @@ body{
     height: 100vh;
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin: 0;
-    /* background-image: url("https://cdn.suwalls.com/wallpapers/meme/meme-compilation-21800-1920x1080.jpg");
+    background-image: url("https://cdn.suwalls.com/wallpapers/meme/meme-compilation-21800-1920x1080.jpg");
     background-size: cover;
     background-color: rgb(150, 150, 150);
     background-position-y:bottom;
-    background-blend-mode:lighten; */
-    margin-right: 0 auto;
+    background-blend-mode:lighten;
     
+   
 }
 
 
@@ -53,7 +53,7 @@ body{
   display:flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap:5px;
+  gap:1px;
 }
 
 input[type=text]{
@@ -76,11 +76,11 @@ input[type=text]{
 
 }
 
-#submit{
+#submit,#download{
     width:100%;
     margin-top: 10px;
     border-style: none;
-    padding: 10px 15px;
+    padding: 7px 15px;
     background-image: linear-gradient(to right, #0373fd, #009cff, #00bfff, #00deff, #49f9ff);
     color:white;
     border-radius: 10px;

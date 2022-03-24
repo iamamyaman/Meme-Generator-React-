@@ -1,4 +1,5 @@
 import React from "react"
+import domtoimage from 'dom-to-image';
 
 
 export default function Meme(){
@@ -40,7 +41,17 @@ export default function Meme(){
             })
          )
     }
+    
 
+    function downloadImage(e){
+    domtoimage.toJpeg(document.getElementById('meme--image'), { quality: 0.95 })
+    .then(function (dataUrl) {
+        var link = document.createElement('a');
+        link.download = 'dogex-meme';
+        link.href = dataUrl;
+        link.click();
+    });
+    }
 
     return(
         <div className="meme--box">
@@ -62,16 +73,17 @@ export default function Meme(){
                       value={meme.bottomText}
                       onChange={handleChange}
                       />
-
+                    
                     <button 
                       onClick={getRandomImage}
                       id ="submit" 
                       type ="submit">
                           Change image
                       </button>
+                      <button id="download" onClick={downloadImage}>Download</button>
                 </div>
-                <div className="meme--image">
-                    <img src={meme.randomImage} className ="meme--image"></img>
+                <div className="meme--image" id ="meme--image">
+                    <img src={meme.randomImage} className ="meme--img" id ="meme--img"></img>
                     <h1 className ="meme--text top">{meme.topText}</h1>
                     <h1 className ="meme--text bottom">{meme.bottomText}</h1>
                 </div>
