@@ -88,15 +88,21 @@ input[type=text]{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 900;
 }
-.meme--image img{
+
+.meme--img{
+    width:100%;
+}
+.meme--img img{
+
     border-radius: 5px;
-    width:25rem;
+    width:20rem;
     box-shadow: 0px 0px 10px 3
     px cyan;
+    object-fit: cover;
 }
 .meme--image{
     position:relative;
-    max-width: 100%;
+    max-width: 90%;
 }
 .meme--text{
     width: 80%;

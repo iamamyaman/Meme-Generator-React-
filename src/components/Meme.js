@@ -6,7 +6,7 @@ export default function Meme(){
     const [meme,setMeme] = React.useState({
         topText:"",
         bottomText:"",
-        randomImage:"http://i.imgflip.com/1bij.jpg"
+        randomImage:"https://i.imgflip.com/265k.jpg"
     });
 
     const [allMemes,setAllMemes] = React.useState([]);
@@ -44,6 +44,7 @@ export default function Meme(){
     
 
     function downloadImage(e){
+    e.preventDefault()
     domtoimage.toJpeg(document.getElementById('meme--image'), { quality: 0.95 })
     .then(function (dataUrl) {
         var link = document.createElement('a');
